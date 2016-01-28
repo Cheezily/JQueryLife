@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>DivLife!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href='style.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+<header><a href="http://www.math.cornell.edu/~lipa/mec/lesson6.html" target="_blank">
+Conway's Game of Life (click to learn more)</a></header>
+
+<div class="topMenu">
+	<button class='run topButton'>Run</button>
+	<button class='stop topButton'>Pause</button>
+	<button class='reset topButton'>Clear</button>
+
+</div>
+
+<div class='container'></div>
+
+<div class="bottomMenu">
+	<p>Board Size:</p>
+	<button class='50 bottomButtonRow1'>Size: 50x30</button>
+	<button class='70 bottomButtonRow1 activeButton'>Size: 70x50</button>
+	<button class='100 bottomButtonRow1'>Size: 100x80</button>
+	<p>Sim Speed:&nbsp;</p>
+	<button class='slow bottomButtonRow2'>Slow</button>
+	<button class='medium bottomButtonRow2'>Medium</button>
+	<button class='fast bottomButtonRow2 activeButton'>Fast</button>
+</div>
+
+<div class='notice'>
+	Feel free to add cells while it's running. The cells in light green are younger, dark green are older.  Have fun!
+</div>
+
+	<script type='text/javascript' src='main.js'></script>
+</body>
+
